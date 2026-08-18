@@ -1,11 +1,58 @@
-<!DOCTYPE html>
+<!-- 打死不改 -->
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>脱缰凯剧本整理目录</title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="https://www.bilibili.com/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <title>脱缰凯的视频整理目录</title>
     
-</body>
+    {% load django_bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: lightblue;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">脱缰凯的视频整理目录</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">推荐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">高光时刻</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">专辑</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <br>
+    <div class="card" style="width: 99rem;">
+      <br>
+      <p class="card-text">此网站的站长是一名<a href="https://space.bilibili.com/373388923/upload/video" target="_blank">脱缰凯</a>的粉丝。他因兴趣指使而创建该网站，专门整理脱缰凯的视频，并表达少量看法。</p>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div class="card" style="width: 18rem;">
+      {% load static %}
+      <img src="{% static 'images/脱缰凯.png' %}" class="card-img-top" alt="脱缰凯（YYDS！）">
+      <div class="card-body">
+        <h2 class="card-text">脱缰凯</h2>
+        <br>
+        <p class="card-text">抖音博主、B站UP主（可能还有更多的但我没见过），一人饰多角的天花板之一。因拍摄大量的校园搞笑视频而获得大量关注。</p>
+      </div>
+    </div>
+  </body>
 </html>
